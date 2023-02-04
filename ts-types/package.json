@@ -2,16 +2,22 @@
   "name": "ts-types",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel serve src/index.ts",
-    "dev": "parcel watch src/index.ts"
+    "dev": "parcel watch src/index.ts",
+    "build": "parcel build src/index.ts"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "author": "Cody Averett",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.8.3",
+    "@parcel/transformer-typescript-types": "^2.8.3",
     "@types/node": "^18.11.18",
     "parcel": "^2.8.3",
     "type-fest": "^3.5.5",

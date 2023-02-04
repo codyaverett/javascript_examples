@@ -1,14 +1,12 @@
-import { KebabCase } from 'type-fest';
+import { KebabCase, PascalCase } from 'type-fest';
 
 type firstName = "cody" | "heather";
 type lastName = "averett";
 
-type name = "codyAverett" | "heatherAverett"
+type name = PascalCase<`${firstName} ${lastName}`>;
 
 const someVariable: KebabCase<name> = 'cody-averett';
+const someVariable2: KebabCase<name> | 'codyAverett' = 'heather-averett';
 
-
-const someVariable2: KebabCase<name> | 'codyAverett' = 'cody-averett';
-
-
-console.log("elllo");
+console.log("someVariable", someVariable);
+console.log("someVariable2", someVariable2);
