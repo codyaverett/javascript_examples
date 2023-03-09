@@ -4,17 +4,17 @@ import './App.css';
 
 import {Button as Button4} from 'mui4';
 import {Button as Button5} from 'mui5';
+import {Button as Button6} from 'mui6';
 
 import styled from '@emotion/styled';
 
 const Button4Styled = styled(Button4)`
-  background-color: #f00;
-  color: #fff;
 `;
 
 const Button5Styled = styled(Button5)`
-  background-color: #f00;
-  color: #fff;
+`;
+
+const Button6Styled = styled(Button6)`
 `;
 
 function App() {
@@ -37,8 +37,9 @@ function App() {
           Learn React with TypeScript
         </a>  
       </header>
-        <Button4Styled variant="contained" color="primary">Stoked!</Button4Styled>
-        <Button5Styled variant="contained" color="primary">Stoked!</Button5Styled>
+        <Button4Styled variant="contained" color="primary">four!</Button4Styled>
+        <Button5Styled variant="contained" color="primary">five!</Button5Styled>
+        <Button6Styled variant="outlined" color="secondary">six!</Button6Styled>
     </div>
   );
 }
