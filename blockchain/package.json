@@ -12,5 +12,9 @@
   "devDependencies": {
     "@types/node": "^18.15.11",
     "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "elliptic": "^6.5.4",
+    "sha3": "^2.1.4"
   }
 }
