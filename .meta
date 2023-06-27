@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "deno": "git@github.com:codyaverett/deno_examples.git"
+  }
+}
