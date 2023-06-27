@@ -6,7 +6,6 @@ interface Props {
 }
 
 export const Render: React.FC<Props> = (props) => {
-
     // example function that take a while to run
     // return how long it took to run in seconds
     function longRunningFunction(seconds: IntRange<0x1, 0xA>) {
@@ -34,7 +33,7 @@ export const Render: React.FC<Props> = (props) => {
         case 'fragment':
             return <></>;
         case 'children':
-            return '' as any;
+            return null;
         // default:
         //     throw new InvalidRenderTypeError(props.type);
     }
